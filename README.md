@@ -1,5 +1,7 @@
 基于lineageos开源内核修复，添加了KernelSU-Next与SUSFS
 如果编译报错可能需要手动将SUSFS补丁patch到KernelSU-Next中
+kernel_patch中的补丁可以辅助修补KernelSU-Next/kernel中的文件
+观察输出的报错自行选择需要的文件
 
 执行build.sh生成配置文件
 再执行build-i.sh即可编译内核
