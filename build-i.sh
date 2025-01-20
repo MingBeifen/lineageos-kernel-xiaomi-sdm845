@@ -1,5 +1,5 @@
 #!/bin/bash
-export PATH="/home/louis/android-kernel/toolchain/android-kernel-tools/linaro-gcc-4.9/arm-linux-gnueabi/bin:/home/louis/android-kernel/toolchain/android-kernel-tools/linaro-gcc-4.9/aarch64-linux-gnu/bin:/home/louis/android-kernel/toolchain/android-kernel-tools/clang-r428724/bin:$PATH"
+export PATH="$(pwd)/tools/linaro-gcc-4.9/arm-linux-gnueabi/bin:$(pwd)/tools/linaro-gcc-4.9/aarch64-linux-gnu/bin:$(pwd)/tools/clang-r428724/bin:$PATH"
 make -j16             O=out \
                       ARCH=arm64 \
                       CC=clang \
